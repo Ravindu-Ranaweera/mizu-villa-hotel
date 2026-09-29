@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="MIZU Villa, Sri Lanka - a restored colonial bungalow with a shaded verandah, walled garden and private parking. Book the entire villa.">
+<meta property="og:title" content="MIZU Villa">
+<meta property="og:description" content="A whole house under the palms. A restored colonial bungalow in Sri Lanka, booked as one.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/IMG_6214.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%231E4D3B%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-family=%27Georgia,serif%27 font-size=%2719%27 fill=%27%23F1F0EA%27 text-anchor=%27middle%27%3EM%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<title>MIZU Villa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Karla:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --ground:#F1F0EA;
+    --surface:#FFFFFF;
+    --ink:#16221C;
+    --ink-soft:#5C6A62;
+    --line:#D9D7CD;
+    --palm:#1E4D3B;
+    --palm-soft:#EAEFEA;
+    --tile:#B4552F;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme: dark;
+      --ground:#0D1411;
+      --surface:#151E19;
+      --ink:#E6EAE4;
+      --ink-soft:#9AA79F;
+      --line:#26332C;
+      --palm:#8FC0A4;
+      --palm-soft:#16231C;
+      --tile:#D98A5F;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --ground:#0D1411;
+    --surface:#151E19;
+    --ink:#E6EAE4;
+    --ink-soft:#9AA79F;
+    --line:#26332C;
+    --palm:#8FC0A4;
+    --palm-soft:#16231C;
+    --tile:#D98A5F;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--ground);
+    color:var(--ink);
+    font-family:"Karla","Helvetica Neue",Arial,sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:"Fraunces",Georgia,"Times New Roman",serif;font-weight:400;text-wrap:balance;margin:0}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+
+  .wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+  .eyebrow{
+    font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--ink-soft);font-weight:700;margin:0 0 14px;
+  }
+
+  nav{
+    position:sticky;top:env(safe-area-inset-top,0px);z-index:40;
+    background:var(--ground);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-in{
+    max-width:1080px;margin:0 auto;padding:12px 20px;
+    display:flex;align-items:center;gap:18px;
+  }
+  .mark{font-family:"Fraunces",Georgia,serif;font-size:19px;letter-spacing:.14em;text-transform:uppercase}
+  .nav-links{margin-left:auto;display:flex;gap:20px;flex-wrap:wrap}
+  .nav-links a{
+    text-decoration:none;font-size:13px;letter-spacing:.06em;color:var(--ink-soft);
+    padding-block:4px;border-bottom:1px solid transparent;
+  }
+  .nav-links a:hover{color:var(--ink);border-bottom-color:var(--palm)}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:700;
+    font-size:13px;letter-spacing:.08em;text-transform:uppercase;
+    background:var(--palm);color:var(--ground);
+    padding:11px 20px;border-radius:2px;
+    transition:opacity .18s ease;
+  }
+  .btn:hover{opacity:.85}
+  .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+  nav .btn{padding:9px 16px}
+
+  header.hero{position:relative;overflow:hidden}
+  header.hero > img{width:100%;height:clamp(340px,62vh,560px);object-fit:cover}
+  .hero-veil{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(11,20,16,.32) 0%,rgba(11,20,16,.10) 38%,rgba(11,20,16,.80) 100%);
+  }
+  .hero-copy{
+    position:absolute;left:0;right:0;bottom:0;
+    padding:0 20px 34px;color:#F3F2EC;
+  }
+  .hero-inner{max-width:1080px;margin:0 auto}
+  .hero-copy h1{font-size:clamp(36px,7.4vw,70px);line-height:1.02;letter-spacing:-.01em;color:#fff}
+  .hero-copy .eyebrow{color:rgba(243,242,236,.82)}
+  .hero-copy p{margin:12px 0 0;max-width:46ch;color:rgba(243,242,236,.92)}
+
+  .facts{border-bottom:1px solid var(--line);background:var(--surface)}
+  .facts-in{
+    max-width:1080px;margin:0 auto;padding:18px 20px;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
+  }
+  .fact dt{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+  .fact dd{margin:4px 0 0;font-family:"Fraunces",Georgia,serif;font-size:19px}
+
+  section{padding-block:clamp(48px,8vw,84px)}
+  .lede{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,56px);align-items:start}
+  .lede h2{font-size:clamp(28px,4.4vw,42px);line-height:1.12}
+  .lede p{color:var(--ink-soft);max-width:58ch;margin:0}
+  .lede p + p{margin-top:14px}
+
+  .rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
+  .room{background:var(--surface);border:1px solid var(--line);overflow:hidden}
+  .room img{width:100%;aspect-ratio:4/3;object-fit:cover;max-width:100%}
+  .room .body{padding:16px 18px 20px}
+  .room h3{font-size:21px;margin-bottom:6px}
+  .room p{margin:0;font-size:14px;color:var(--ink-soft)}
+
+  .amen{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,56px);align-items:start}
+  ul.ticks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
+  ul.ticks li{display:flex;gap:10px;font-size:15px;align-items:baseline}
+  ul.ticks li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--palm);transform:translateY(-2px)}
+  .note{border-left:2px solid var(--tile);padding-left:16px;color:var(--ink-soft);font-size:14px;margin:0}
+
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px}
+  .grid button{all:unset;cursor:zoom-in;display:block;overflow:hidden;background:var(--palm-soft)}
+  .grid button:focus-visible{outline:2px solid var(--palm);outline-offset:2px}
+  .grid img{width:100%;height:100%;aspect-ratio:1;object-fit:cover;transition:transform .5s ease}
+  .grid button:hover img{transform:scale(1.04)}
+  .grid .tall{grid-row:span 2}
+  .grid .tall img{aspect-ratio:1/2.06}
+
+  .book{background:var(--palm-soft);border-block:1px solid var(--line)}
+  .book-in{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(24px,5vw,56px);align-items:center}
+  .book h2{font-size:clamp(28px,4.4vw,40px);line-height:1.12}
+  .book p{color:var(--ink-soft);margin:14px 0 0;max-width:52ch}
+  .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+  .contact{background:var(--surface);border:1px solid var(--line);padding:22px 24px;margin:0}
+  .contact dt{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);font-weight:700;margin-top:16px}
+  .contact dt:first-child{margin-top:0}
+  .contact dd{margin:3px 0 0;font-size:15px;user-select:all}
+
+  footer{padding:30px 20px 46px;text-align:center;color:var(--ink-soft);font-size:13px}
+  footer .mark{font-size:16px;display:block;margin-bottom:8px;color:var(--ink)}
+
+  .lb{
+    position:fixed;inset:0;z-index:100;display:none;
+    background:rgba(9,15,12,.94);
+    align-items:center;justify-content:center;padding:24px;
+  }
+  .lb[data-open]{display:flex}
+  .lb img{max-width:min(100%,1200px);max-height:84vh;object-fit:contain}
+  .lb-close{
+    position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:16px;
+    background:none;border:1px solid rgba(243,242,236,.4);color:#F3F2EC;
+    font-size:22px;line-height:1;width:40px;height:40px;cursor:pointer;border-radius:2px;
+  }
+  .lb-nav{
+    position:absolute;top:50%;transform:translateY(-50%);
+    background:none;border:none;color:#F3F2EC;font-size:34px;cursor:pointer;
+    padding:14px;opacity:.7;
+  }
+  .lb-nav:hover{opacity:1}
+  .lb-prev{left:4px}
+  .lb-next{right:4px}
+
+  @media (max-width:860px){
+    .facts-in{grid-template-columns:1fr 1fr;gap:16px}
+    .rooms{grid-template-columns:1fr 1fr}
+    .lede,.amen,.book-in{grid-template-columns:1fr}
+    .grid{grid-template-columns:repeat(3,1fr)}
+  }
+  @media (max-width:560px){
+    .nav-links{display:none}
+    .rooms{grid-template-columns:1fr}
+    .grid{grid-template-columns:repeat(2,1fr)}
+    ul.ticks{grid-template-columns:1fr}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important}
+  }
+</style>
+
+<nav>
+  <div class="nav-in">
+    <div class="mark">Mizu Villa</div>
+    <div class="nav-links">
+      <a href="#house">The house</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#book">Contact</a>
+    </div>
+    <a class="btn" href="https://www.booking.com/hotel/lk/mizu-villa.html" target="_blank" rel="noopener">Check dates</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <img src="img/IMG_6214.jpg" alt="MIZU Villa at midday: a white colonial bungalow with a terracotta tile roof, framed by coconut palms">
+  <div class="hero-veil"></div>
+  <div class="hero-copy">
+    <div class="hero-inner">
+      <p class="eyebrow">Private villa &middot; Sri Lanka</p>
+      <h1>A whole house<br>under the palms</h1>
+      <p>A restored colonial bungalow with a deep shaded verandah, timber ceilings and a walled garden that keeps the road out. Yours alone, for a night or a month.</p>
+    </div>
+  </div>
+</header>
+
+<div class="facts">
+  <dl class="facts-in">
+    <div class="fact"><dt>Check-in</dt><dd>From 14:00</dd></div>
+    <div class="fact"><dt>Check-out</dt><dd>Until 11:00</dd></div>
+    <div class="fact"><dt>The booking</dt><dd>Entire villa</dd></div>
+    <div class="fact"><dt>Parking</dt><dd>Free, on site</dd></div>
+  </dl>
+</div>
+
+<section id="house" class="wrap">
+  <div class="lede">
+    <div>
+      <p class="eyebrow">The house</p>
+      <h2>Built the old way, and kept cool by it</h2>
+    </div>
+    <div>
+      <p>Lime-washed walls, a pitched clay-tile roof and a polished timber ceiling running the length of the house. The construction is the air conditioning. A verandah wraps the front on carved white columns, wide enough to eat under, and the checkerboard forecourt runs out to a gravel drive lined with palms.</p>
+      <p>Inside, rooms open into each other through tall panelled doors, all on one level. The garden is walled on three sides and lit after dark, so the evening hours are as usable as the afternoon ones.</p>
+    </div>
+  </div>
+
+  <div class="rooms" id="rooms">
+    <article class="room">
+      <img src="img/IMG_6372.jpg" alt="Bedroom with a king bed, air conditioning, writing desk and an antique wardrobe" loading="lazy">
+      <div class="body">
+        <h3>Bedroom</h3>
+        <p>King bed under a pale timber ceiling, air conditioning, writing desk and an antique almirah. Fresh linen on arrival.</p>
+      </div>
+    </article>
+    <article class="room">
+      <img src="img/IMG_6279.jpg" alt="Long living room with two facing sofas, a low teak table and a television" loading="lazy">
+      <div class="body">
+        <h3>Living room</h3>
+        <p>Two facing sofas, a low teak table and a television. Air-conditioned, with doors through to the verandah.</p>
+      </div>
+    </article>
+    <article class="room">
+      <img src="img/IMG_6336.jpg" alt="Kitchen with a gas hob, sink, fridge-freezer, washing machine and a patterned tile splashback" loading="lazy">
+      <div class="body">
+        <h3>Kitchen</h3>
+        <p>Gas hob, fridge-freezer, kettle, blender, rice cooker and a washing machine. Enough to cook properly, not just make coffee.</p>
+      </div>
+    </article>
+    <article class="room">
+      <img src="img/IMG_6383.jpg" alt="Bathroom with a walk-in rain shower, a basin on a timber counter and a timber ceiling" loading="lazy">
+      <div class="body">
+        <h3>Bathroom</h3>
+        <p>Walk-in rain shower with a hand spray, basin set on a timber counter, hot water throughout.</p>
+      </div>
+    </article>
+    <article class="room">
+      <img src="img/IMG_6263.jpg" alt="The verandah at night, lit by paper lanterns beneath an exposed timber roof" loading="lazy">
+      <div class="body">
+        <h3>Verandah</h3>
+        <p>Lantern-lit after dark, with planter chairs and a table. The best room in the house most evenings.</p>
+      </div>
+    </article>
+    <article class="room">
+      <img src="img/IMG_6235.jpg" alt="Grass side garden running the length of the villa, edged with a brick border and potted plants" loading="lazy">
+      <div class="body">
+        <h3>Garden &amp; drive</h3>
+        <p>Walled lawn, mature palms and frangipani, and a gravel drive with room for a car right at the door.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="wrap" style="padding-top:0">
+  <div class="amen">
+    <div>
+      <p class="eyebrow">What&rsquo;s here</p>
+      <h2 style="font-size:clamp(26px,4vw,36px);margin-bottom:22px">Everything a house has</h2>
+      <p class="note">Every photograph on this page is of the villa itself. Live prices, dates and guest reviews are on the booking page.</p>
+    </div>
+    <ul class="ticks">
+      <li>Air conditioning</li>
+      <li>Free Wi-Fi</li>
+      <li>Full kitchen</li>
+      <li>Washing machine</li>
+      <li>Rain shower, hot water</li>
+      <li>Fridge-freezer</li>
+      <li>Private walled garden</li>
+      <li>Covered verandah</li>
+      <li>Free private parking</li>
+      <li>Flat-screen TV</li>
+      <li>Fresh linen &amp; towels</li>
+      <li>Garden lighting</li>
+    </ul>
+  </div>
+</section>
+
+<section id="gallery" class="wrap" style="padding-top:0">
+  <p class="eyebrow">Gallery</p>
+  <h2 style="font-size:clamp(26px,4vw,36px)">Twelve photographs</h2>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap book-in">
+    <div>
+      <p class="eyebrow">Reserve</p>
+      <h2>Check the dates, then take the whole house</h2>
+      <p>Availability and nightly rates are kept current on Booking.com. For longer stays, airport transfers, or anything you would rather arrange directly, write to us.</p>
+      <div class="actions">
+        <a class="btn" href="https://www.booking.com/hotel/lk/mizu-villa.html" target="_blank" rel="noopener">Book on Booking.com</a>
+        <a class="btn btn-ghost" href="#gallery">See the villa again</a>
+      </div>
+    </div>
+    <dl class="contact">
+      <dt>Email</dt>
+      <dd>hello@mizuvilla.lk</dd>
+      <dt>Phone / WhatsApp</dt>
+      <dd>+94 00 000 0000</dd>
+      <dt>Where</dt>
+      <dd>Sri Lanka</dd>
+    </dl>
+  </div>
+</section>
+
+<footer>
+  <span class="mark">Mizu Villa</span>
+  Sri Lanka &middot; Entire villa, booked as one
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photograph">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous photograph">&#8249;</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next photograph">&#8250;</button>
+</div>
+
+<script>
+  var PHOTOS = [
+    {f:"IMG_6214", a:"The villa from the drive at midday, palms overhead", tall:false},
+    {f:"IMG_6225", a:"The verandah and forecourt seen from the side of the drive", tall:false},
+    {f:"IMG_6263", a:"The verandah at night under paper lanterns", tall:true},
+    {f:"IMG_6239", a:"The gravel drive and garden lit after dark", tall:true},
+    {f:"IMG_6277", a:"The living room with its facing sofas", tall:false},
+    {f:"IMG_6279", a:"The living room from the far end", tall:false},
+    {f:"IMG_6235", a:"The grass side garden alongside the house", tall:true},
+    {f:"IMG_6372", a:"The bedroom with king bed and antique almirah", tall:true},
+    {f:"IMG_6336", a:"The kitchen, with fridge-freezer and washing machine", tall:false},
+    {f:"IMG_6339", a:"The kitchen counter and patterned splashback", tall:false},
+    {f:"IMG_6348", a:"Gas hob, blender and rice cooker on the kitchen counter", tall:false},
+    {f:"IMG_6383", a:"The bathroom and its walk-in rain shower", tall:false}
+  ];
+
+  var grid = document.getElementById("grid");
+  PHOTOS.forEach(function(p, i){
+    var b = document.createElement("button");
+    b.type = "button";
+    if (p.tall) { b.className = "tall"; }
+    b.setAttribute("aria-label", "Open photograph: " + p.a);
+    var im = document.createElement("img");
+    im.src = "img/" + p.f + ".jpg";
+    im.alt = p.a;
+    im.loading = "lazy";
+    b.appendChild(im);
+    b.addEventListener("click", function(){ openAt(i); });
+    grid.appendChild(b);
+  });
+
+  var lb = document.getElementById("lb"),
+      lbImg = document.getElementById("lbImg"),
+      idx = 0;
+
+  function openAt(i){
+    idx = i;
+    lbImg.src = "img/" + PHOTOS[i].f + ".jpg";
+    lbImg.alt = PHOTOS[i].a;
+    lb.setAttribute("data-open", "");
+    document.getElementById("lbClose").focus();
+  }
+  function closeLb(){ lb.removeAttribute("data-open"); }
+  function step(d){ openAt((idx + d + PHOTOS.length) % PHOTOS.length); }
+
+  document.getElementById("lbClose").addEventListener("click", closeLb);
+  document.getElementById("lbPrev").addEventListener("click", function(e){ e.stopPropagation(); step(-1); });
+  document.getElementById("lbNext").addEventListener("click", function(e){ e.stopPropagation(); step(1); });
+  lb.addEventListener("click", function(e){ if (e.target === lb || e.target === lbImg) { closeLb(); } });
+  document.addEventListener("keydown", function(e){
+    if (!lb.hasAttribute("data-open")) { return; }
+    if (e.key === "Escape") { closeLb(); }
+    if (e.key === "ArrowLeft") { step(-1); }
+    if (e.key === "ArrowRight") { step(1); }
+  });
+</script>
+
+</body>
+</html>
